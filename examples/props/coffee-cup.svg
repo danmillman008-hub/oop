@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200">
+<defs><linearGradient id="cup" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#eee0ca"/><stop offset="1" stop-color="#a88f71"/></linearGradient><radialGradient id="coffee"><stop stop-color="#4a2b1e"/><stop offset="1" stop-color="#211411"/></radialGradient></defs>
+<ellipse cx="600" cy="704" rx="150" ry="28" fill="#1b1413" opacity=".35"/>
+<path d="M518 526H668L651 690Q600 717 535 690Z" fill="url(#cup)" stroke="#46352b" stroke-width="15"/>
+<ellipse cx="593" cy="527" rx="76" ry="22" fill="#f4e7d1" stroke="#46352b" stroke-width="13"/>
+<ellipse cx="593" cy="530" rx="58" ry="13" fill="url(#coffee)"/>
+<path d="M666 554Q745 545 742 607Q738 660 659 641" fill="none" stroke="#b9a186" stroke-width="20"/>
+<path d="M568 475Q540 434 573 398M618 476Q594 430 628 389" fill="none" stroke="#ead3a9" stroke-width="12" stroke-linecap="round" opacity=".7"/>
+</svg>

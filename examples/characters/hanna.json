@@ -1,0 +1,39 @@
+{
+  "name": "Hanna, late-shift detective",
+  "body": {
+    "height": 0.78,
+    "build": 0.76,
+    "skin_color": [201, 138, 91]
+  },
+  "face": {
+    "shape": 0.72,
+    "eye_size": 0.96,
+    "eye_color": [54, 70, 76],
+    "eyebrow_thickness": 0.82,
+    "nose_size": 0.54,
+    "lip_fullness": 0.48
+  },
+  "hair": {
+    "color": [55, 39, 27],
+    "style": "Messy",
+    "length": 0.48
+  },
+  "outfit": {
+    "top": {
+      "kind": "Suit",
+      "color": [77, 61, 45],
+      "secondary_color": [106, 84, 61]
+    },
+    "bottom": {
+      "kind": "Pants",
+      "color": [53, 46, 39]
+    },
+    "shoes": {
+      "kind": "Formal",
+      "color": [38, 31, 27]
+    },
+    "accessories": [
+      { "kind": "Tie", "color": [117, 35, 42] }
+    ]
+  }
+}

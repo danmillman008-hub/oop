@@ -1,0 +1,371 @@
+import character hanna from "characters/hanna.json"
+import character mccauley from "characters/mccauley.json"
+import set diner-night from "sets/diner-night.svg"
+import prop diner-table from "props/diner-table.svg"
+import prop coffee-cup from "props/coffee-cup.svg"
+
+config {
+  width: 1280
+  height: 720
+  fps: 24
+  background: #171416
+}
+
+// Fictionalized, dialogue-free diner tribute. All 9 poses specify the 24 fields accepted by this DSL.
+
+pose "waiting" {
+  line-of-action: 0.0000
+  torso-bend: 4.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: 10.0000
+  arm-right-angle: -10.0000
+  elbow-left-bend: 0.1000
+  elbow-right-bend: 0.1000
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: 2.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.0800
+  eyebrow-right: 0.0800
+  eye-open-left: 0.9500
+  eye-open-right: 0.9500
+  eye-direction: 0.0500
+  mouth-smile: 0.0000
+  mouth-open: 0.0000
+}
+
+pose "settling" {
+  line-of-action: 0.0800
+  torso-bend: 7.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.1000
+  shoulder-right: 0.1000
+  arm-left-angle: -8.0000
+  arm-right-angle: 8.0000
+  elbow-left-bend: 0.7500
+  elbow-right-bend: 0.7500
+  leg-left-angle: -4.0000
+  leg-right-angle: 4.0000
+  knee-left-bend: 0.1800
+  knee-right-bend: 0.1800
+  head-tilt: 0.0000
+  head-nod: 5.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.0000
+  eyebrow-right: 0.0000
+  eye-open-left: 0.9200
+  eye-open-right: 0.9200
+  eye-direction: 0.0000
+  mouth-smile: 0.0600
+  mouth-open: 0.0000
+}
+
+pose "talking" {
+  line-of-action: 0.1500
+  torso-bend: 12.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.2200
+  shoulder-right: 0.1800
+  arm-left-angle: 8.0000
+  arm-right-angle: -45.0000
+  elbow-left-bend: 0.2000
+  elbow-right-bend: 0.8200
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: -3.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.2000
+  eyebrow-right: 0.1600
+  eye-open-left: 0.9800
+  eye-open-right: 0.9800
+  eye-direction: 0.0500
+  mouth-smile: 0.1000
+  mouth-open: 0.2200
+}
+
+pose "listening" {
+  line-of-action: 0.0400
+  torso-bend: 2.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.0800
+  shoulder-right: 0.0800
+  arm-left-angle: 8.0000
+  arm-right-angle: -8.0000
+  elbow-left-bend: 0.1200
+  elbow-right-bend: 0.1200
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: 0.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.1800
+  eyebrow-right: 0.2000
+  eye-open-left: 1.0400
+  eye-open-right: 1.0400
+  eye-direction: -0.1800
+  mouth-smile: 0.0200
+  mouth-open: 0.0000
+}
+
+pose "lean-in" {
+  line-of-action: 0.2500
+  torso-bend: 18.0000
+  torso-squash: 0.9800
+  shoulder-left: 0.1800
+  shoulder-right: 0.1800
+  arm-left-angle: -8.0000
+  arm-right-angle: 22.0000
+  elbow-left-bend: 0.6500
+  elbow-right-bend: 0.7800
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: -6.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.2800
+  eyebrow-right: 0.2400
+  eye-open-left: 0.9400
+  eye-open-right: 0.9400
+  eye-direction: 0.1000
+  mouth-smile: 0.0000
+  mouth-open: 0.0500
+}
+
+pose "answering" {
+  line-of-action: 0.1200
+  torso-bend: 8.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.1500
+  shoulder-right: 0.1500
+  arm-left-angle: 8.0000
+  arm-right-angle: -45.0000
+  elbow-left-bend: 0.1500
+  elbow-right-bend: 0.8200
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: 2.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.2000
+  eyebrow-right: 0.2000
+  eye-open-left: 0.9500
+  eye-open-right: 0.9500
+  eye-direction: -0.0500
+  mouth-smile: -0.0500
+  mouth-open: 0.1800
+}
+
+pose "sip-coffee" {
+  line-of-action: 0.0800
+  torso-bend: 5.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.0500
+  shoulder-right: 0.2500
+  arm-left-angle: -40.0000
+  arm-right-angle: -80.0000
+  elbow-left-bend: 0.7000
+  elbow-right-bend: 0.9500
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: 4.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.0000
+  eyebrow-right: 0.0000
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.1200
+  mouth-smile: 0.0000
+  mouth-open: 0.0800
+}
+
+pose "rise" {
+  line-of-action: 0.0200
+  torso-bend: 0.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.1000
+  shoulder-right: 0.1000
+  arm-left-angle: 5.0000
+  arm-right-angle: -5.0000
+  elbow-left-bend: 0.1500
+  elbow-right-bend: 0.1500
+  leg-left-angle: -8.0000
+  leg-right-angle: 8.0000
+  knee-left-bend: 0.4500
+  knee-right-bend: 0.4500
+  head-tilt: -1.0000
+  head-nod: 0.0000
+  y-offset: -1.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.0000
+  eyebrow-right: 0.0000
+  eye-open-left: 0.9800
+  eye-open-right: 0.9800
+  eye-direction: 0.0000
+  mouth-smile: 0.0400
+  mouth-open: 0.0000
+}
+
+pose "alone" {
+  line-of-action: -0.1200
+  torso-bend: 12.0000
+  torso-squash: 1.0000
+  shoulder-left: -0.3500
+  shoulder-right: -0.3500
+  arm-left-angle: 8.0000
+  arm-right-angle: -8.0000
+  elbow-left-bend: 0.1000
+  elbow-right-bend: 0.1000
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: 18.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: -0.1000
+  eyebrow-right: -0.1200
+  eye-open-left: 0.7200
+  eye-open-right: 0.7200
+  eye-direction: -0.0800
+  mouth-smile: -0.1800
+  mouth-open: 0.0000
+}
+
+scene "establish" (duration: 10s, set: diner-night) {
+  place mccauley at (0.30, 0.72) facing right layer 1
+  place diner-table at (0.50, 0.77) layer 2
+  mccauley pose "waiting"
+  camera wide
+  wait 2s
+  camera medium mccauley
+  wait 1.5s
+  camera zoom-to mccauley over 1s ease-in-out
+  wait 2s
+  camera wide
+  wait 2.5s
+  transition fade-black 1s
+}
+
+scene "hanna-arrives" (duration: 12s, set: diner-night) {
+  place mccauley at (0.30, 0.72) facing right layer 1
+  // Enter from the right so the walk never crosses McCauley and trips overlap detection.
+  place hanna at (0.95, 0.72) facing left layer 1
+  place diner-table at (0.50, 0.77) layer 2
+  mccauley pose "waiting"
+  hanna pose "rise"
+  camera wide
+  together {
+    hanna moves-to (0.68, 0.72) over 4s ease-out
+    camera pan-to (0.52, 0.54) over 4s ease-in-out
+  }
+  camera zoom-to hanna over 1s ease-in-out
+  wait 1s
+  camera two-shot
+  wait 3s
+  camera wide
+  wait 2.5s
+  transition fade-black 0.5s
+}
+
+scene "the-table" (duration: 20s, set: diner-night) {
+  place mccauley at (0.30, 0.72) facing right layer 1
+  place hanna at (0.70, 0.72) facing left layer 1
+  place diner-table at (0.50, 0.77) layer 2
+  place coffee-cup at (0.43, 0.70) layer 3
+  mccauley pose "waiting"
+  hanna pose "settling"
+  camera two-shot
+  wait 3s
+  camera zoom-to hanna over 1s ease-in-out
+  hanna pose "talking"
+  wait 3s
+  camera zoom-to mccauley over 1s ease-in-out
+  mccauley pose "listening"
+  wait 3s
+  camera two-shot
+  wait 3s
+  camera zoom-to hanna over 1s ease-in-out
+  hanna pose "lean-in"
+  wait 2s
+  camera wide
+  wait 2.5s
+  transition fade-black 0.5s
+}
+
+scene "the-exchange" (duration: 28s, set: diner-night) {
+  place mccauley at (0.30, 0.72) facing right layer 1
+  place hanna at (0.70, 0.72) facing left layer 1
+  place diner-table at (0.50, 0.77) layer 2
+  place coffee-cup at (0.43, 0.70) layer 3
+  camera two-shot
+  mccauley pose "answering"
+  wait 1s
+  camera zoom-to mccauley over 1s ease-in-out
+  wait 2s
+  camera zoom-to hanna over 1s ease-in-out
+  hanna pose "listening"
+  wait 2s
+  hanna pose "talking"
+  wait 4s
+  camera zoom-to mccauley over 1s ease-in-out
+  mccauley pose "sip-coffee"
+  together {
+    coffee-cup moves-to (0.39, 0.59) over 1s ease-out
+    do {
+      wait 2s
+      coffee-cup moves-to (0.43, 0.70) over 1s ease-in-out
+    }
+  }
+  camera zoom-to hanna over 1s ease-in-out
+  hanna pose "lean-in"
+  wait 3s
+  camera zoom-to mccauley over 1s ease-in-out
+  mccauley pose "listening"
+  wait 2s
+  camera two-shot
+  wait 5s
+  transition fade-black 1s
+}
+
+scene "parting" (duration: 16s, set: diner-night) {
+  place mccauley at (0.30, 0.72) facing right layer 1
+  place hanna at (0.68, 0.72) facing left layer 1
+  place diner-table at (0.50, 0.77) layer 2
+  mccauley pose "listening"
+  hanna pose "rise"
+  camera two-shot
+  wait 3s
+  camera wide
+  // Step into the back aisle before crossing the frame, keeping the two figures separated.
+  hanna moves-to (0.68, 0.46) over 1s ease-in-out
+  hanna exits left over 3s ease-in
+  camera zoom-to mccauley over 1s ease-in-out
+  mccauley pose "alone"
+  wait 6s
+  transition fade-black 2s
+}
