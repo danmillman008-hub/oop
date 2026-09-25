@@ -1,0 +1,37 @@
+{
+  "name": "McCauley, quiet stranger",
+  "body": {
+    "height": 0.78,
+    "build": 0.34,
+    "skin_color": [215, 165, 120]
+  },
+  "face": {
+    "shape": 0.42,
+    "eye_size": 0.9,
+    "eye_color": [82, 91, 99],
+    "eyebrow_thickness": 0.58,
+    "nose_size": 0.38,
+    "lip_fullness": 0.34
+  },
+  "hair": {
+    "color": [128, 128, 126],
+    "style": "Short",
+    "length": 0.2
+  },
+  "outfit": {
+    "top": {
+      "kind": "Suit",
+      "color": [34, 32, 31],
+      "secondary_color": [66, 62, 58]
+    },
+    "bottom": {
+      "kind": "Pants",
+      "color": [32, 31, 30]
+    },
+    "shoes": {
+      "kind": "Formal",
+      "color": [25, 24, 23]
+    },
+    "accessories": []
+  }
+}

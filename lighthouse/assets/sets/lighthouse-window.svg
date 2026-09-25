@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs>
+ <linearGradient id="storm" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#111d36"/><stop offset=".55" stop-color="#31465c"/><stop offset="1" stop-color="#172c43"/></linearGradient>
+ <linearGradient id="sea" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#315c71"/><stop offset="1" stop-color="#101f32"/></linearGradient>
+ <linearGradient id="stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#384451"/><stop offset="1" stop-color="#1b2838"/></linearGradient>
+ <radialGradient id="flash"><stop stop-color="#e8f5ff" stop-opacity=".8"/><stop offset="1" stop-color="#9fb9d4" stop-opacity="0"/></radialGradient>
+</defs>
+<rect width="1280" height="720" fill="url(#storm)"/>
+<ellipse cx="927" cy="196" rx="380" ry="285" fill="url(#flash)"/>
+<path d="M0 420Q110 385 220 420T440 420T660 420T880 420T1100 420T1320 420V720H0Z" fill="url(#sea)"/>
+<path d="M0 490q70-35 140 0t140 0t140 0t140 0t140 0t140 0t140 0t140 0t140 0t140 0" fill="none" stroke="#9cb4c4" stroke-width="6" opacity=".7"/>
+<path d="M0 565q80-28 160 0t160 0t160 0t160 0t160 0t160 0t160 0t160 0" fill="none" stroke="#658296" stroke-width="5" opacity=".72"/>
+<path d="M0 640q65-25 130 0t130 0t130 0t130 0t130 0t130 0t130 0t130 0t130 0t130 0" fill="none" stroke="#425f74" stroke-width="5"/>
+<path d="M173 720V287a240 205 0 0 1 480 0v433Z" fill="#101927" stroke="#a7815c" stroke-width="30"/>
+<path d="M207 700V288a206 174 0 0 1 412 0v412Z" fill="url(#storm)" stroke="#d0aa77" stroke-width="8"/>
+<path d="M413 87V702M207 438H619" stroke="#a7815c" stroke-width="19"/>
+<path d="M818 90l-79 169h57l-63 159 150-205h-71l62-123Z" fill="#e7f1fb" stroke="#fff7d8" stroke-width="7"/>
+<path d="M0 34H1280M0 47H1280" stroke="#607080" stroke-width="13" opacity=".6"/>
+<path d="M690 0H1280V47H690Z" fill="url(#stone)"/>
+<path d="M690 670H1280V720H690Z" fill="url(#stone)"/>
+<path d="M0 125l340 560M54 20l300 540M965 4L715 600M1117 0L865 570M1248 72L1004 570M584 20L421 345M742 40L617 364M105 187L294 514M541 20L400 300M1173 205L952 653M1214 352L1080 635" stroke="#b4cad5" stroke-width="4" opacity=".58"/>
+<path d="M775 662h410" stroke="#d1a16a" stroke-width="22"/>
+<rect x="0" y="0" width="1280" height="720" fill="none" stroke="#0d1727" stroke-width="30"/>
+</svg>

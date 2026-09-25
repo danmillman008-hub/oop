@@ -1,0 +1,3558 @@
+import character kai from "assets/characters/kai.json"
+import character maya from "assets/characters/maya.json"
+import set lighthouse-interior from "assets/sets/lighthouse-interior.svg"
+import set lighthouse-window from "assets/sets/lighthouse-window.svg"
+import set lighthouse-beam from "assets/sets/lighthouse-beam.svg"
+import set sea-view from "assets/sets/sea-view.svg"
+import set dawn-sky from "assets/sets/dawn-sky.svg"
+import prop beacon from "assets/props/beacon-lantern.svg"
+import prop red-scarf from "assets/props/red-scarf.svg"
+
+config {
+  width: 1280
+  height: 720
+  fps: 24
+  background: #111d2e
+}
+
+pose "gazing" {
+  line-of-action: 0.0400
+  torso-bend: -2.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.1800
+  shoulder-right: 0.1800
+  arm-left-angle: -24.0000
+  arm-right-angle: 24.0000
+  elbow-left-bend: 0.4200
+  elbow-right-bend: 0.4200
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: -7.0000
+  y-offset: 0.0000
+  body-angle: 180.0000
+  eyebrow-left: 0.0000
+  eyebrow-right: 0.0000
+  eye-open-left: 0.9200
+  eye-open-right: 0.9200
+  eye-direction: 0.0000
+  mouth-smile: 0.0000
+  mouth-open: 0.0000
+}
+
+pose "shielding" {
+  line-of-action: 0.2800
+  torso-bend: -9.0000
+  torso-squash: 0.9600
+  shoulder-left: 0.4800
+  shoulder-right: 0.3500
+  arm-left-angle: -55.0000
+  arm-right-angle: -72.0000
+  elbow-left-bend: 0.7400
+  elbow-right-bend: 0.8600
+  leg-left-angle: -7.0000
+  leg-right-angle: 8.0000
+  knee-left-bend: 0.2400
+  knee-right-bend: 0.2000
+  head-tilt: 0.0000
+  head-nod: 12.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.5800
+  eyebrow-right: 0.4800
+  eye-open-left: 1.1600
+  eye-open-right: 1.1600
+  eye-direction: 0.0000
+  mouth-smile: -0.0800
+  mouth-open: 0.2600
+}
+
+pose "lifting" {
+  line-of-action: 0.3800
+  torso-bend: -13.0000
+  torso-squash: 0.9400
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -13.0000
+  leg-right-angle: 12.0000
+  knee-left-bend: 0.4800
+  knee-right-bend: 0.4300
+  head-tilt: 3.0000
+  head-nod: -12.0000
+  y-offset: -4.0000
+  body-angle: 75.0000
+  eyebrow-left: -0.1200
+  eyebrow-right: -0.1200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1800
+  mouth-open: 0.1000
+}
+
+pose "signaling" {
+  line-of-action: 0.1600
+  torso-bend: -3.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -12.0000
+  leg-right-angle: 12.0000
+  knee-left-bend: 0.0800
+  knee-right-bend: 0.0800
+  head-tilt: -2.0000
+  head-nod: -3.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: -0.3600
+  eyebrow-right: -0.3200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.3500
+  mouth-smile: -0.2200
+  mouth-open: 0.0600
+}
+
+pose "watching" {
+  line-of-action: 0.1000
+  torso-bend: 5.0000
+  torso-squash: 1.0000
+  shoulder-left: -0.0400
+  shoulder-right: -0.0400
+  arm-left-angle: 9.0000
+  arm-right-angle: -9.0000
+  elbow-left-bend: 0.1000
+  elbow-right-bend: 0.1000
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: -2.0000
+  head-nod: -1.0000
+  y-offset: 0.0000
+  body-angle: 70.0000
+  eyebrow-left: 0.1800
+  eyebrow-right: 0.3000
+  eye-open-left: 1.0000
+  eye-open-right: 1.0000
+  eye-direction: 0.3800
+  mouth-smile: 0.1200
+  mouth-open: 0.0000
+}
+
+pose "exhausted-peace" {
+  line-of-action: -0.1800
+  torso-bend: 8.0000
+  torso-squash: 0.9700
+  shoulder-left: -0.4200
+  shoulder-right: -0.4200
+  arm-left-angle: 18.0000
+  arm-right-angle: -18.0000
+  elbow-left-bend: 0.1800
+  elbow-right-bend: 0.1800
+  leg-left-angle: 4.0000
+  leg-right-angle: -4.0000
+  knee-left-bend: 0.1000
+  knee-right-bend: 0.1000
+  head-tilt: 2.0000
+  head-nod: 15.0000
+  y-offset: 0.0000
+  body-angle: 180.0000
+  eyebrow-left: -0.1500
+  eyebrow-right: -0.1500
+  eye-open-left: 0.7200
+  eye-open-right: 0.7200
+  eye-direction: 0.0000
+  mouth-smile: -0.1800
+  mouth-open: 0.0000
+}
+
+pose "grateful" {
+  line-of-action: 0.0800
+  torso-bend: -4.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.2400
+  shoulder-right: 0.0000
+  arm-left-angle: -34.0000
+  arm-right-angle: 8.0000
+  elbow-left-bend: 0.8600
+  elbow-right-bend: 0.1200
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: -3.0000
+  head-nod: -8.0000
+  y-offset: 0.0000
+  body-angle: 68.0000
+  eyebrow-left: 0.3000
+  eyebrow-right: 0.3600
+  eye-open-left: 0.9600
+  eye-open-right: 0.9600
+  eye-direction: 0.0000
+  mouth-smile: 0.7200
+  mouth-open: 0.0200
+}
+
+pose "dashing" {
+  line-of-action: 0.4800
+  torso-bend: -17.0000
+  torso-squash: 1.0400
+  shoulder-left: 0.1200
+  shoulder-right: 0.1800
+  arm-left-angle: 46.0000
+  arm-right-angle: -46.0000
+  elbow-left-bend: 0.4600
+  elbow-right-bend: 0.4200
+  leg-left-angle: -23.0000
+  leg-right-angle: 23.0000
+  knee-left-bend: 0.4600
+  knee-right-bend: 0.4300
+  head-tilt: 1.0000
+  head-nod: -5.0000
+  y-offset: -2.0000
+  body-angle: 75.0000
+  eyebrow-left: -0.1800
+  eyebrow-right: -0.1800
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.0000
+  mouth-smile: -0.0800
+  mouth-open: 0.2300
+}
+
+// BVH-derived, lossy 3D-to-2D key poses (all 24 engine fields explicit).
+pose "mocap-run-000" {
+  line-of-action: 0.0658
+  torso-bend: 2.9588
+  torso-squash: 1.0001
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -61.4510
+  arm-right-angle: 57.6688
+  elbow-left-bend: 0.5721
+  elbow-right-bend: 0.6582
+  leg-left-angle: -12.9185
+  leg-right-angle: 19.2272
+  knee-left-bend: 0.1766
+  knee-right-bend: 0.3507
+  head-tilt: 1.2645
+  head-nod: 2.2563
+  y-offset: 0.0043
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-001" {
+  line-of-action: 0.0156
+  torso-bend: 0.7013
+  torso-squash: 0.9993
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -58.8713
+  arm-right-angle: 60.4671
+  elbow-left-bend: 0.5957
+  elbow-right-bend: 0.6390
+  leg-left-angle: -15.1346
+  leg-right-angle: 15.1686
+  knee-left-bend: 0.2337
+  knee-right-bend: 0.4589
+  head-tilt: 1.3939
+  head-nod: 2.3249
+  y-offset: -0.0263
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-002" {
+  line-of-action: 0.0354
+  torso-bend: 1.5916
+  torso-squash: 0.9987
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -59.5132
+  arm-right-angle: 60.4682
+  elbow-left-bend: 0.6172
+  elbow-right-bend: 0.6152
+  leg-left-angle: -16.9339
+  leg-right-angle: 11.2222
+  knee-left-bend: 0.2534
+  knee-right-bend: 0.5420
+  head-tilt: 1.3656
+  head-nod: 2.5469
+  y-offset: -0.0502
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-003" {
+  line-of-action: 0.0404
+  torso-bend: 1.8167
+  torso-squash: 0.9987
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -61.0014
+  arm-right-angle: 60.3206
+  elbow-left-bend: 0.6399
+  elbow-right-bend: 0.6131
+  leg-left-angle: -18.2551
+  leg-right-angle: 8.7447
+  knee-left-bend: 0.2415
+  knee-right-bend: 0.5668
+  head-tilt: 1.4204
+  head-nod: 2.8160
+  y-offset: -0.0530
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-004" {
+  line-of-action: 0.0598
+  torso-bend: 2.6907
+  torso-squash: 0.9993
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -62.3146
+  arm-right-angle: 59.2252
+  elbow-left-bend: 0.6605
+  elbow-right-bend: 0.6264
+  leg-left-angle: -18.7753
+  leg-right-angle: 8.9486
+  knee-left-bend: 0.2077
+  knee-right-bend: 0.5240
+  head-tilt: 1.2812
+  head-nod: 2.7255
+  y-offset: -0.0292
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-005" {
+  line-of-action: 0.0813
+  torso-bend: 3.6588
+  torso-squash: 1.0001
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -62.4220
+  arm-right-angle: 59.0178
+  elbow-left-bend: 0.6585
+  elbow-right-bend: 0.6340
+  leg-left-angle: -18.3209
+  leg-right-angle: 10.1247
+  knee-left-bend: 0.1685
+  knee-right-bend: 0.4312
+  head-tilt: 1.2687
+  head-nod: 2.7483
+  y-offset: 0.0053
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-006" {
+  line-of-action: 0.0867
+  torso-bend: 3.9002
+  torso-squash: 1.0008
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -61.5140
+  arm-right-angle: 59.6709
+  elbow-left-bend: 0.6339
+  elbow-right-bend: 0.6413
+  leg-left-angle: -18.0588
+  leg-right-angle: 11.2396
+  knee-left-bend: 0.1278
+  knee-right-bend: 0.3107
+  head-tilt: 1.2923
+  head-nod: 2.7551
+  y-offset: 0.0335
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-007" {
+  line-of-action: 0.0794
+  torso-bend: 3.5719
+  torso-squash: 1.0013
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -60.2015
+  arm-right-angle: 60.4575
+  elbow-left-bend: 0.6051
+  elbow-right-bend: 0.6533
+  leg-left-angle: -19.0574
+  leg-right-angle: 11.5945
+  knee-left-bend: 0.1312
+  knee-right-bend: 0.1876
+  head-tilt: 1.2247
+  head-nod: 2.6266
+  y-offset: 0.0509
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-008" {
+  line-of-action: 0.0645
+  torso-bend: 2.9016
+  torso-squash: 1.0013
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -58.9103
+  arm-right-angle: 61.6328
+  elbow-left-bend: 0.5776
+  elbow-right-bend: 0.6574
+  leg-left-angle: -20.3328
+  leg-right-angle: 10.9498
+  knee-left-bend: 0.1772
+  knee-right-bend: 0.1047
+  head-tilt: 1.1153
+  head-nod: 2.6723
+  y-offset: 0.0531
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-009" {
+  line-of-action: 0.0783
+  torso-bend: 3.5242
+  torso-squash: 1.0010
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -59.6060
+  arm-right-angle: 59.7599
+  elbow-left-bend: 0.5482
+  elbow-right-bend: 0.6525
+  leg-left-angle: -19.2666
+  leg-right-angle: 12.3224
+  knee-left-bend: 0.2619
+  knee-right-bend: 0.0961
+  head-tilt: 1.1497
+  head-nod: 2.5920
+  y-offset: 0.0387
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-010" {
+  line-of-action: 0.0861
+  torso-bend: 3.8758
+  torso-squash: 1.0001
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -59.7963
+  arm-right-angle: 58.7711
+  elbow-left-bend: 0.5167
+  elbow-right-bend: 0.6438
+  leg-left-angle: -16.6851
+  leg-right-angle: 14.7085
+  knee-left-bend: 0.3764
+  knee-right-bend: 0.1632
+  head-tilt: 1.1234
+  head-nod: 2.5442
+  y-offset: 0.0052
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-011" {
+  line-of-action: 0.1025
+  torso-bend: 4.6126
+  torso-squash: 0.9994
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -60.8570
+  arm-right-angle: 57.7438
+  elbow-left-bend: 0.4815
+  elbow-right-bend: 0.6364
+  leg-left-angle: -10.0279
+  leg-right-angle: 19.4758
+  knee-left-bend: 0.4859
+  knee-right-bend: 0.2124
+  head-tilt: 0.8661
+  head-nod: 2.7625
+  y-offset: -0.0258
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-012" {
+  line-of-action: 0.1058
+  torso-bend: 4.7626
+  torso-squash: 0.9992
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -61.8737
+  arm-right-angle: 57.1721
+  elbow-left-bend: 0.4845
+  elbow-right-bend: 0.6414
+  leg-left-angle: -7.3546
+  leg-right-angle: 20.1562
+  knee-left-bend: 0.5511
+  knee-right-bend: 0.2111
+  head-tilt: 0.8253
+  head-nod: 2.7625
+  y-offset: -0.0328
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-013" {
+  line-of-action: 0.0929
+  torso-bend: 4.1820
+  torso-squash: 0.9994
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -61.1039
+  arm-right-angle: 58.4465
+  elbow-left-bend: 0.5230
+  elbow-right-bend: 0.6797
+  leg-left-angle: -5.1108
+  leg-right-angle: 21.4761
+  knee-left-bend: 0.5606
+  knee-right-bend: 0.1804
+  head-tilt: 0.9429
+  head-nod: 2.8415
+  y-offset: -0.0241
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-014" {
+  line-of-action: 0.0686
+  torso-bend: 3.0850
+  torso-squash: 1.0002
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -60.8569
+  arm-right-angle: 59.2514
+  elbow-left-bend: 0.5447
+  elbow-right-bend: 0.6969
+  leg-left-angle: -5.8083
+  leg-right-angle: 21.3975
+  knee-left-bend: 0.5028
+  knee-right-bend: 0.1427
+  head-tilt: 0.9910
+  head-nod: 2.9465
+  y-offset: 0.0082
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-015" {
+  line-of-action: 0.0525
+  torso-bend: 2.3608
+  torso-squash: 1.0009
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -61.8752
+  arm-right-angle: 59.0520
+  elbow-left-bend: 0.5518
+  elbow-right-bend: 0.6926
+  leg-left-angle: -8.0672
+  leg-right-angle: 19.4402
+  knee-left-bend: 0.4050
+  knee-right-bend: 0.0988
+  head-tilt: 1.0544
+  head-nod: 3.0288
+  y-offset: 0.0359
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-016" {
+  line-of-action: 0.0421
+  torso-bend: 1.8957
+  torso-squash: 1.0014
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -61.9027
+  arm-right-angle: 58.5311
+  elbow-left-bend: 0.5654
+  elbow-right-bend: 0.6814
+  leg-left-angle: -9.8358
+  leg-right-angle: 18.1329
+  knee-left-bend: 0.2840
+  knee-right-bend: 0.0790
+  head-tilt: 1.1806
+  head-nod: 3.1398
+  y-offset: 0.0553
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-017" {
+  line-of-action: 0.0428
+  torso-bend: 1.9271
+  torso-squash: 1.0015
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -61.1980
+  arm-right-angle: 57.9502
+  elbow-left-bend: 0.5804
+  elbow-right-bend: 0.6701
+  leg-left-angle: -9.1202
+  leg-right-angle: 20.1530
+  knee-left-bend: 0.1794
+  knee-right-bend: 0.1135
+  head-tilt: 1.2460
+  head-nod: 3.3267
+  y-offset: 0.0590
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-018" {
+  line-of-action: 0.0488
+  torso-bend: 2.1938
+  torso-squash: 1.0011
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -60.6816
+  arm-right-angle: 57.6473
+  elbow-left-bend: 0.5950
+  elbow-right-bend: 0.6471
+  leg-left-angle: -8.9345
+  leg-right-angle: 21.5166
+  knee-left-bend: 0.1379
+  knee-right-bend: 0.1980
+  head-tilt: 1.3769
+  head-nod: 3.2508
+  y-offset: 0.0449
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-019" {
+  line-of-action: 0.0532
+  torso-bend: 2.3959
+  torso-squash: 1.0002
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -59.5720
+  arm-right-angle: 58.4716
+  elbow-left-bend: 0.6052
+  elbow-right-bend: 0.6116
+  leg-left-angle: -10.5570
+  leg-right-angle: 20.5504
+  knee-left-bend: 0.1635
+  knee-right-bend: 0.3116
+  head-tilt: 1.4526
+  head-nod: 3.0738
+  y-offset: 0.0091
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-020" {
+  line-of-action: 0.0567
+  torso-bend: 2.5502
+  torso-squash: 0.9993
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -58.9029
+  arm-right-angle: 59.9710
+  elbow-left-bend: 0.6132
+  elbow-right-bend: 0.5602
+  leg-left-angle: -12.4589
+  leg-right-angle: 17.2752
+  knee-left-bend: 0.2308
+  knee-right-bend: 0.4335
+  head-tilt: 1.4960
+  head-nod: 2.9769
+  y-offset: -0.0291
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-021" {
+  line-of-action: 0.0255
+  torso-bend: 1.1465
+  torso-squash: 0.9987
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -57.2830
+  arm-right-angle: 62.8559
+  elbow-left-bend: 0.5968
+  elbow-right-bend: 0.4850
+  leg-left-angle: -17.3749
+  leg-right-angle: 10.3930
+  knee-left-bend: 0.2427
+  knee-right-bend: 0.5368
+  head-tilt: 1.6811
+  head-nod: 2.9698
+  y-offset: -0.0522
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-022" {
+  line-of-action: 0.0334
+  torso-bend: 1.5015
+  torso-squash: 0.9987
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -58.3659
+  arm-right-angle: 62.6233
+  elbow-left-bend: 0.5987
+  elbow-right-bend: 0.4908
+  leg-left-angle: -18.0063
+  leg-right-angle: 8.9582
+  knee-left-bend: 0.2349
+  knee-right-bend: 0.5752
+  head-tilt: 1.6355
+  head-nod: 3.0255
+  y-offset: -0.0524
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-023" {
+  line-of-action: 0.0486
+  torso-bend: 2.1885
+  torso-squash: 0.9992
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -59.7300
+  arm-right-angle: 59.9591
+  elbow-left-bend: 0.6207
+  elbow-right-bend: 0.5185
+  leg-left-angle: -19.3636
+  leg-right-angle: 8.4974
+  knee-left-bend: 0.2061
+  knee-right-bend: 0.5444
+  head-tilt: 1.5177
+  head-nod: 2.9016
+  y-offset: -0.0316
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-024" {
+  line-of-action: 0.0674
+  torso-bend: 3.0324
+  torso-squash: 0.9999
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -59.4560
+  arm-right-angle: 58.1125
+  elbow-left-bend: 0.6332
+  elbow-right-bend: 0.5400
+  leg-left-angle: -18.8840
+  leg-right-angle: 9.9184
+  knee-left-bend: 0.1694
+  knee-right-bend: 0.4600
+  head-tilt: 1.4715
+  head-nod: 2.9914
+  y-offset: -0.0028
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-025" {
+  line-of-action: 0.0845
+  torso-bend: 3.8025
+  torso-squash: 1.0006
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -58.1449
+  arm-right-angle: 57.2473
+  elbow-left-bend: 0.6303
+  elbow-right-bend: 0.5570
+  leg-left-angle: -18.5968
+  leg-right-angle: 10.8797
+  knee-left-bend: 0.1321
+  knee-right-bend: 0.3404
+  head-tilt: 1.4226
+  head-nod: 3.1543
+  y-offset: 0.0226
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-026" {
+  line-of-action: 0.0849
+  torso-bend: 3.8223
+  torso-squash: 1.0010
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -56.4015
+  arm-right-angle: 57.7165
+  elbow-left-bend: 0.6239
+  elbow-right-bend: 0.5764
+  leg-left-angle: -19.3713
+  leg-right-angle: 11.0338
+  knee-left-bend: 0.1227
+  knee-right-bend: 0.2082
+  head-tilt: 1.3644
+  head-nod: 3.1765
+  y-offset: 0.0393
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-027" {
+  line-of-action: 0.0782
+  torso-bend: 3.5197
+  torso-squash: 1.0010
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -55.8106
+  arm-right-angle: 58.7563
+  elbow-left-bend: 0.6165
+  elbow-right-bend: 0.5965
+  leg-left-angle: -21.2675
+  leg-right-angle: 10.1723
+  knee-left-bend: 0.1579
+  knee-right-bend: 0.1141
+  head-tilt: 1.3480
+  head-nod: 3.0966
+  y-offset: 0.0384
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-028" {
+  line-of-action: 0.0728
+  torso-bend: 3.2763
+  torso-squash: 1.0004
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -56.2886
+  arm-right-angle: 59.8116
+  elbow-left-bend: 0.5967
+  elbow-right-bend: 0.6009
+  leg-left-angle: -20.6914
+  leg-right-angle: 11.8971
+  knee-left-bend: 0.2350
+  knee-right-bend: 0.1135
+  head-tilt: 1.3147
+  head-nod: 2.8091
+  y-offset: 0.0162
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-029" {
+  line-of-action: 0.0833
+  torso-bend: 3.7479
+  torso-squash: 0.9994
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -58.0015
+  arm-right-angle: 59.4126
+  elbow-left-bend: 0.5682
+  elbow-right-bend: 0.5992
+  leg-left-angle: -18.8039
+  leg-right-angle: 13.7680
+  knee-left-bend: 0.3436
+  knee-right-bend: 0.1755
+  head-tilt: 1.3117
+  head-nod: 2.7676
+  y-offset: -0.0228
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-030" {
+  line-of-action: 0.0942
+  torso-bend: 4.2403
+  torso-squash: 0.9986
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -59.9416
+  arm-right-angle: 59.3478
+  elbow-left-bend: 0.5458
+  elbow-right-bend: 0.5893
+  leg-left-angle: -11.2860
+  leg-right-angle: 19.0142
+  knee-left-bend: 0.4581
+  knee-right-bend: 0.2394
+  head-tilt: 1.2795
+  head-nod: 2.7488
+  y-offset: -0.0552
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-run-031" {
+  line-of-action: 0.0942
+  torso-bend: 4.2374
+  torso-squash: 0.9982
+  shoulder-left: 0.0000
+  shoulder-right: 0.0000
+  arm-left-angle: -62.6576
+  arm-right-angle: 58.7593
+  elbow-left-bend: 0.5373
+  elbow-right-bend: 0.5866
+  leg-left-angle: -9.6624
+  leg-right-angle: 19.1894
+  knee-left-bend: 0.5296
+  knee-right-bend: 0.2646
+  head-tilt: 1.3720
+  head-nod: 2.4150
+  y-offset: -0.0724
+  body-angle: 75.0000
+  eyebrow-left: -0.2200
+  eyebrow-right: -0.2200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1000
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-000" {
+  line-of-action: -0.0137
+  torso-bend: -0.6176
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.5662
+  leg-right-angle: 12.7254
+  knee-left-bend: 0.0554
+  knee-right-bend: 0.0720
+  head-tilt: 1.4002
+  head-nod: 2.1686
+  y-offset: 0.0356
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-001" {
+  line-of-action: -0.0155
+  torso-bend: -0.6961
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.5739
+  leg-right-angle: 12.7631
+  knee-left-bend: 0.0554
+  knee-right-bend: 0.0715
+  head-tilt: 1.4120
+  head-nod: 2.1658
+  y-offset: 0.0355
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-002" {
+  line-of-action: -0.0154
+  torso-bend: -0.6941
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.4179
+  leg-right-angle: 12.9060
+  knee-left-bend: 0.0567
+  knee-right-bend: 0.0710
+  head-tilt: 1.4004
+  head-nod: 2.2138
+  y-offset: 0.0353
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-003" {
+  line-of-action: -0.0159
+  torso-bend: -0.7133
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.4295
+  leg-right-angle: 12.8665
+  knee-left-bend: 0.0574
+  knee-right-bend: 0.0711
+  head-tilt: 1.3833
+  head-nod: 2.2127
+  y-offset: 0.0350
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-004" {
+  line-of-action: -0.0163
+  torso-bend: -0.7349
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.4172
+  leg-right-angle: 12.9059
+  knee-left-bend: 0.0568
+  knee-right-bend: 0.0715
+  head-tilt: 1.3655
+  head-nod: 2.2552
+  y-offset: 0.0351
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-005" {
+  line-of-action: -0.0183
+  torso-bend: -0.8226
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.5978
+  leg-right-angle: 12.7200
+  knee-left-bend: 0.0549
+  knee-right-bend: 0.0729
+  head-tilt: 1.4157
+  head-nod: 2.3074
+  y-offset: 0.0352
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-006" {
+  line-of-action: -0.0199
+  torso-bend: -0.8933
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.6566
+  leg-right-angle: 12.6734
+  knee-left-bend: 0.0552
+  knee-right-bend: 0.0733
+  head-tilt: 1.3941
+  head-nod: 2.3708
+  y-offset: 0.0350
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-007" {
+  line-of-action: -0.0171
+  torso-bend: -0.7698
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.7981
+  leg-right-angle: 12.4038
+  knee-left-bend: 0.0567
+  knee-right-bend: 0.0743
+  head-tilt: 1.4070
+  head-nod: 2.2632
+  y-offset: 0.0348
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-008" {
+  line-of-action: -0.0147
+  torso-bend: -0.6616
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.0481
+  leg-right-angle: 12.5742
+  knee-left-bend: 0.0681
+  knee-right-bend: 0.0731
+  head-tilt: 1.4218
+  head-nod: 2.2797
+  y-offset: 0.0351
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-009" {
+  line-of-action: -0.0189
+  torso-bend: -0.8503
+  torso-squash: 1.0009
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -11.8745
+  leg-right-angle: 11.7264
+  knee-left-bend: 0.0799
+  knee-right-bend: 0.0770
+  head-tilt: 1.3832
+  head-nod: 2.0728
+  y-offset: 0.0350
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-010" {
+  line-of-action: -0.0213
+  torso-bend: -0.9586
+  torso-squash: 1.0008
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -11.5620
+  leg-right-angle: 10.9964
+  knee-left-bend: 0.1009
+  knee-right-bend: 0.0907
+  head-tilt: 1.3819
+  head-nod: 1.8776
+  y-offset: 0.0322
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-011" {
+  line-of-action: -0.0194
+  torso-bend: -0.8747
+  torso-squash: 1.0006
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.0898
+  leg-right-angle: 8.1694
+  knee-left-bend: 0.1222
+  knee-right-bend: 0.1270
+  head-tilt: 1.3249
+  head-nod: 1.4330
+  y-offset: 0.0245
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-012" {
+  line-of-action: -0.0186
+  torso-bend: -0.8376
+  torso-squash: 1.0003
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.1514
+  leg-right-angle: 5.7359
+  knee-left-bend: 0.1447
+  knee-right-bend: 0.1541
+  head-tilt: 1.2945
+  head-nod: 1.1521
+  y-offset: 0.0137
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-013" {
+  line-of-action: -0.0151
+  torso-bend: -0.6808
+  torso-squash: 1.0001
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.4164
+  leg-right-angle: 4.0022
+  knee-left-bend: 0.1603
+  knee-right-bend: 0.1736
+  head-tilt: 1.2820
+  head-nod: 0.9790
+  y-offset: 0.0047
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-014" {
+  line-of-action: -0.0161
+  torso-bend: -0.7244
+  torso-squash: 1.0000
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.8918
+  leg-right-angle: 2.6041
+  knee-left-bend: 0.1639
+  knee-right-bend: 0.1826
+  head-tilt: 1.3141
+  head-nod: 0.9026
+  y-offset: 0.0013
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-015" {
+  line-of-action: -0.0150
+  torso-bend: -0.6772
+  torso-squash: 1.0000
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.5404
+  leg-right-angle: 1.9260
+  knee-left-bend: 0.1700
+  knee-right-bend: 0.1867
+  head-tilt: 1.2565
+  head-nod: 0.7255
+  y-offset: -0.0014
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-016" {
+  line-of-action: -0.0140
+  torso-bend: -0.6293
+  torso-squash: 0.9996
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.1430
+  leg-right-angle: 1.0046
+  knee-left-bend: 0.1896
+  knee-right-bend: 0.2060
+  head-tilt: 1.3226
+  head-nod: 0.4758
+  y-offset: -0.0144
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-017" {
+  line-of-action: -0.0150
+  torso-bend: -0.6728
+  torso-squash: 0.9989
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.1722
+  leg-right-angle: -0.1919
+  knee-left-bend: 0.2247
+  knee-right-bend: 0.2472
+  head-tilt: 1.3668
+  head-nod: 0.3364
+  y-offset: -0.0425
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-018" {
+  line-of-action: -0.0128
+  torso-bend: -0.5759
+  torso-squash: 0.9981
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.4727
+  leg-right-angle: -0.5193
+  knee-left-bend: 0.2617
+  knee-right-bend: 0.2921
+  head-tilt: 1.3560
+  head-nod: 0.2905
+  y-offset: -0.0764
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-019" {
+  line-of-action: -0.0154
+  torso-bend: -0.6950
+  torso-squash: 0.9970
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.5427
+  leg-right-angle: -0.8805
+  knee-left-bend: 0.3131
+  knee-right-bend: 0.3464
+  head-tilt: 1.3399
+  head-nod: 0.2316
+  y-offset: -0.1183
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-020" {
+  line-of-action: -0.0190
+  torso-bend: -0.8542
+  torso-squash: 0.9959
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -13.1307
+  leg-right-angle: -1.8785
+  knee-left-bend: 0.3722
+  knee-right-bend: 0.4135
+  head-tilt: 1.3966
+  head-nod: 0.0352
+  y-offset: -0.1621
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-021" {
+  line-of-action: -0.0125
+  torso-bend: -0.5603
+  torso-squash: 0.9954
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -13.5430
+  leg-right-angle: 0.5767
+  knee-left-bend: 0.3921
+  knee-right-bend: 0.4386
+  head-tilt: 1.0854
+  head-nod: 0.4619
+  y-offset: -0.1840
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-022" {
+  line-of-action: 0.0078
+  torso-bend: 0.3517
+  torso-squash: 0.9967
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -13.8693
+  leg-right-angle: 6.0400
+  knee-left-bend: 0.3256
+  knee-right-bend: 0.3704
+  head-tilt: 1.1517
+  head-nod: 0.8265
+  y-offset: -0.1303
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-023" {
+  line-of-action: 0.0132
+  torso-bend: 0.5922
+  torso-squash: 1.0007
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -13.1630
+  leg-right-angle: 9.9548
+  knee-left-bend: 0.1678
+  knee-right-bend: 0.1984
+  head-tilt: 1.0970
+  head-nod: 1.8092
+  y-offset: 0.0275
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-024" {
+  line-of-action: -0.0070
+  torso-bend: -0.3133
+  torso-squash: 1.0047
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.4324
+  leg-right-angle: 12.8961
+  knee-left-bend: 0.1465
+  knee-right-bend: 0.1775
+  head-tilt: 1.0418
+  head-nod: 2.2707
+  y-offset: 0.1864
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-025" {
+  line-of-action: -0.0103
+  torso-bend: -0.4646
+  torso-squash: 1.0070
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -13.2803
+  leg-right-angle: 10.5271
+  knee-left-bend: 0.1553
+  knee-right-bend: 0.1998
+  head-tilt: 0.9327
+  head-nod: 2.1995
+  y-offset: 0.2795
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-026" {
+  line-of-action: -0.0019
+  torso-bend: -0.0864
+  torso-squash: 1.0075
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.0815
+  leg-right-angle: 10.5678
+  knee-left-bend: 0.1279
+  knee-right-bend: 0.1479
+  head-tilt: 0.8418
+  head-nod: 2.0785
+  y-offset: 0.2989
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-027" {
+  line-of-action: 0.0007
+  torso-bend: 0.0305
+  torso-squash: 1.0061
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -10.8806
+  leg-right-angle: 9.2386
+  knee-left-bend: 0.0879
+  knee-right-bend: 0.0875
+  head-tilt: 0.8333
+  head-nod: 1.9031
+  y-offset: 0.2458
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-028" {
+  line-of-action: -0.0127
+  torso-bend: -0.5700
+  torso-squash: 1.0028
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -10.9135
+  leg-right-angle: 7.5331
+  knee-left-bend: 0.0780
+  knee-right-bend: 0.0773
+  head-tilt: 0.7923
+  head-nod: 1.7416
+  y-offset: 0.1102
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-029" {
+  line-of-action: -0.0203
+  torso-bend: -0.9135
+  torso-squash: 0.9976
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -14.0077
+  leg-right-angle: 6.2944
+  knee-left-bend: 0.2637
+  knee-right-bend: 0.2872
+  head-tilt: 1.0332
+  head-nod: 1.4061
+  y-offset: -0.0954
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-030" {
+  line-of-action: -0.0233
+  torso-bend: -1.0504
+  torso-squash: 0.9952
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.2715
+  leg-right-angle: 6.8924
+  knee-left-bend: 0.3613
+  knee-right-bend: 0.3884
+  head-tilt: 1.0709
+  head-nod: 1.4797
+  y-offset: -0.1924
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-031" {
+  line-of-action: -0.0201
+  torso-bend: -0.9055
+  torso-squash: 0.9948
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -11.9633
+  leg-right-angle: 7.3510
+  knee-left-bend: 0.3823
+  knee-right-bend: 0.4080
+  head-tilt: 1.2380
+  head-nod: 1.0269
+  y-offset: -0.2099
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-032" {
+  line-of-action: -0.0178
+  torso-bend: -0.8009
+  torso-squash: 0.9955
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -11.9813
+  leg-right-angle: 8.5393
+  knee-left-bend: 0.3599
+  knee-right-bend: 0.3819
+  head-tilt: 1.2596
+  head-nod: 1.0934
+  y-offset: -0.1797
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-033" {
+  line-of-action: -0.0259
+  torso-bend: -1.1634
+  torso-squash: 0.9967
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.2043
+  leg-right-angle: 9.4130
+  knee-left-bend: 0.3143
+  knee-right-bend: 0.3345
+  head-tilt: 1.2672
+  head-nod: 1.3590
+  y-offset: -0.1305
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-034" {
+  line-of-action: -0.0241
+  torso-bend: -1.0838
+  torso-squash: 0.9980
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.4404
+  leg-right-angle: 10.3768
+  knee-left-bend: 0.2630
+  knee-right-bend: 0.2812
+  head-tilt: 1.2499
+  head-nod: 1.5316
+  y-offset: -0.0808
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-035" {
+  line-of-action: -0.0201
+  torso-bend: -0.9032
+  torso-squash: 0.9990
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.5657
+  leg-right-angle: 11.2658
+  knee-left-bend: 0.2124
+  knee-right-bend: 0.2321
+  head-tilt: 1.1857
+  head-nod: 1.6698
+  y-offset: -0.0401
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-036" {
+  line-of-action: -0.0195
+  torso-bend: -0.8795
+  torso-squash: 0.9998
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.5757
+  leg-right-angle: 11.6566
+  knee-left-bend: 0.1649
+  knee-right-bend: 0.1877
+  head-tilt: 1.1281
+  head-nod: 1.7795
+  y-offset: -0.0093
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-037" {
+  line-of-action: -0.0181
+  torso-bend: -0.8140
+  torso-squash: 1.0002
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.9063
+  leg-right-angle: 11.7822
+  knee-left-bend: 0.1285
+  knee-right-bend: 0.1564
+  head-tilt: 1.0991
+  head-nod: 1.7912
+  y-offset: 0.0093
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-038" {
+  line-of-action: -0.0122
+  torso-bend: -0.5482
+  torso-squash: 1.0005
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.8007
+  leg-right-angle: 12.4632
+  knee-left-bend: 0.1038
+  knee-right-bend: 0.1357
+  head-tilt: 1.1665
+  head-nod: 1.7910
+  y-offset: 0.0197
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-039" {
+  line-of-action: -0.0135
+  torso-bend: -0.6088
+  torso-squash: 1.0006
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -12.9964
+  leg-right-angle: 12.5221
+  knee-left-bend: 0.0885
+  knee-right-bend: 0.1266
+  head-tilt: 1.1031
+  head-nod: 1.8471
+  y-offset: 0.0237
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-lift-040" {
+  line-of-action: -0.0137
+  torso-bend: -0.6147
+  torso-squash: 1.0006
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -13.1388
+  leg-right-angle: 12.6434
+  knee-left-bend: 0.0799
+  knee-right-bend: 0.1236
+  head-tilt: 1.1152
+  head-nod: 1.7904
+  y-offset: 0.0241
+  body-angle: 75.0000
+  eyebrow-left: -0.1600
+  eyebrow-right: -0.1600
+  eye-open-left: 0.9100
+  eye-open-right: 0.9100
+  eye-direction: 0.0000
+  mouth-smile: -0.1600
+  mouth-open: 0.0800
+}
+
+pose "mocap-signal-000" {
+  line-of-action: -0.0010
+  torso-bend: -0.0459
+  torso-squash: 0.9998
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -6.5664
+  leg-right-angle: 8.3001
+  knee-left-bend: 0.1864
+  knee-right-bend: 0.0915
+  head-tilt: 0.0099
+  head-nod: 2.3302
+  y-offset: -0.0095
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-001" {
+  line-of-action: -0.0033
+  torso-bend: -0.1494
+  torso-squash: 0.9998
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -7.4516
+  leg-right-angle: 8.0918
+  knee-left-bend: 0.1803
+  knee-right-bend: 0.0881
+  head-tilt: 0.0182
+  head-nod: 2.4833
+  y-offset: -0.0090
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-002" {
+  line-of-action: -0.0041
+  torso-bend: -0.1834
+  torso-squash: 0.9998
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.2322
+  leg-right-angle: 8.2984
+  knee-left-bend: 0.1487
+  knee-right-bend: 0.0789
+  head-tilt: 0.0024
+  head-nod: 2.5439
+  y-offset: -0.0099
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-003" {
+  line-of-action: -0.0032
+  torso-bend: -0.1427
+  torso-squash: 0.9997
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.5810
+  leg-right-angle: 8.7408
+  knee-left-bend: 0.1064
+  knee-right-bend: 0.0664
+  head-tilt: -0.0749
+  head-nod: 2.6897
+  y-offset: -0.0113
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-004" {
+  line-of-action: -0.0043
+  torso-bend: -0.1955
+  torso-squash: 0.9997
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.9940
+  leg-right-angle: 9.0421
+  knee-left-bend: 0.0729
+  knee-right-bend: 0.0501
+  head-tilt: -0.1305
+  head-nod: 2.7711
+  y-offset: -0.0139
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-005" {
+  line-of-action: -0.0027
+  torso-bend: -0.1203
+  torso-squash: 0.9996
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.9371
+  leg-right-angle: 8.9697
+  knee-left-bend: 0.0658
+  knee-right-bend: 0.0413
+  head-tilt: -0.1672
+  head-nod: 2.7309
+  y-offset: -0.0178
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-006" {
+  line-of-action: -0.0060
+  torso-bend: -0.2687
+  torso-squash: 0.9994
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.7813
+  leg-right-angle: 8.4886
+  knee-left-bend: 0.0776
+  knee-right-bend: 0.0381
+  head-tilt: -0.1979
+  head-nod: 2.6318
+  y-offset: -0.0229
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-007" {
+  line-of-action: -0.0084
+  torso-bend: -0.3764
+  torso-squash: 0.9995
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -9.5883
+  leg-right-angle: 7.1241
+  knee-left-bend: 0.0967
+  knee-right-bend: 0.0519
+  head-tilt: -0.2807
+  head-nod: 2.6180
+  y-offset: -0.0191
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-008" {
+  line-of-action: -0.0117
+  torso-bend: -0.5268
+  torso-squash: 0.9998
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -10.6665
+  leg-right-angle: 6.0659
+  knee-left-bend: 0.0958
+  knee-right-bend: 0.1096
+  head-tilt: -0.2804
+  head-nod: 2.6289
+  y-offset: -0.0064
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-009" {
+  line-of-action: -0.0143
+  torso-bend: -0.6435
+  torso-squash: 1.0000
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -11.4975
+  leg-right-angle: 4.6207
+  knee-left-bend: 0.0909
+  knee-right-bend: 0.1723
+  head-tilt: -0.2623
+  head-nod: 2.4924
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-010" {
+  line-of-action: -0.0142
+  torso-bend: -0.6403
+  torso-squash: 1.0000
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -12.2825
+  leg-right-angle: 3.8278
+  knee-left-bend: 0.0893
+  knee-right-bend: 0.2028
+  head-tilt: -0.2318
+  head-nod: 2.4438
+  y-offset: 0.0009
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-011" {
+  line-of-action: -0.0098
+  torso-bend: -0.4420
+  torso-squash: 0.9999
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -12.5097
+  leg-right-angle: 3.8532
+  knee-left-bend: 0.0944
+  knee-right-bend: 0.1869
+  head-tilt: -0.1799
+  head-nod: 2.4347
+  y-offset: -0.0051
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-012" {
+  line-of-action: -0.0084
+  torso-bend: -0.3784
+  torso-squash: 0.9998
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -12.5719
+  leg-right-angle: 4.3330
+  knee-left-bend: 0.0865
+  knee-right-bend: 0.1335
+  head-tilt: -0.1575
+  head-nod: 2.4349
+  y-offset: -0.0064
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-013" {
+  line-of-action: -0.0124
+  torso-bend: -0.5571
+  torso-squash: 0.9999
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -13.3489
+  leg-right-angle: 4.7410
+  knee-left-bend: 0.0590
+  knee-right-bend: 0.0760
+  head-tilt: -0.1334
+  head-nod: 2.3924
+  y-offset: -0.0035
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-014" {
+  line-of-action: -0.0152
+  torso-bend: -0.6834
+  torso-squash: 0.9997
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -13.4496
+  leg-right-angle: 4.2165
+  knee-left-bend: 0.0449
+  knee-right-bend: 0.0641
+  head-tilt: -0.1507
+  head-nod: 2.3875
+  y-offset: -0.0100
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-015" {
+  line-of-action: -0.0061
+  torso-bend: -0.2739
+  torso-squash: 0.9997
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -10.9454
+  leg-right-angle: 5.4810
+  knee-left-bend: 0.0585
+  knee-right-bend: 0.0713
+  head-tilt: -0.1677
+  head-nod: 2.3252
+  y-offset: -0.0108
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-016" {
+  line-of-action: 0.0028
+  torso-bend: 0.1273
+  torso-squash: 1.0000
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -9.3986
+  leg-right-angle: 6.5292
+  knee-left-bend: 0.0994
+  knee-right-bend: 0.0839
+  head-tilt: -0.1428
+  head-nod: 2.4611
+  y-offset: 0.0015
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-017" {
+  line-of-action: 0.0006
+  torso-bend: 0.0272
+  torso-squash: 1.0003
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -6.9681
+  leg-right-angle: 8.4928
+  knee-left-bend: 0.1704
+  knee-right-bend: 0.0804
+  head-tilt: -0.1590
+  head-nod: 2.4148
+  y-offset: 0.0101
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-018" {
+  line-of-action: 0.0026
+  torso-bend: 0.1160
+  torso-squash: 1.0003
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -6.3986
+  leg-right-angle: 9.1694
+  knee-left-bend: 0.2116
+  knee-right-bend: 0.0804
+  head-tilt: -0.1271
+  head-nod: 2.4539
+  y-offset: 0.0115
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-019" {
+  line-of-action: -0.0045
+  torso-bend: -0.2012
+  torso-squash: 1.0001
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -7.2172
+  leg-right-angle: 9.1681
+  knee-left-bend: 0.2086
+  knee-right-bend: 0.0881
+  head-tilt: -0.1301
+  head-nod: 2.5073
+  y-offset: 0.0051
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-020" {
+  line-of-action: -0.0050
+  torso-bend: -0.2232
+  torso-squash: 1.0000
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.0107
+  leg-right-angle: 9.3607
+  knee-left-bend: 0.1607
+  knee-right-bend: 0.0905
+  head-tilt: -0.1706
+  head-nod: 2.5200
+  y-offset: -0.0017
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-021" {
+  line-of-action: -0.0044
+  torso-bend: -0.1984
+  torso-squash: 1.0001
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.6790
+  leg-right-angle: 9.7409
+  knee-left-bend: 0.0935
+  knee-right-bend: 0.0697
+  head-tilt: -0.1837
+  head-nod: 2.5540
+  y-offset: 0.0034
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-022" {
+  line-of-action: -0.0051
+  torso-bend: -0.2294
+  torso-squash: 1.0001
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -9.4888
+  leg-right-angle: 9.7134
+  knee-left-bend: 0.0625
+  knee-right-bend: 0.0518
+  head-tilt: -0.1932
+  head-nod: 2.4923
+  y-offset: 0.0034
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-023" {
+  line-of-action: -0.0049
+  torso-bend: -0.2187
+  torso-squash: 0.9998
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.2202
+  leg-right-angle: 9.3917
+  knee-left-bend: 0.0725
+  knee-right-bend: 0.0513
+  head-tilt: -0.1929
+  head-nod: 2.5592
+  y-offset: -0.0062
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-024" {
+  line-of-action: -0.0114
+  torso-bend: -0.5109
+  torso-squash: 0.9999
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -9.3892
+  leg-right-angle: 7.5431
+  knee-left-bend: 0.0856
+  knee-right-bend: 0.0577
+  head-tilt: -0.1561
+  head-nod: 2.5634
+  y-offset: -0.0035
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-025" {
+  line-of-action: -0.0134
+  torso-bend: -0.6015
+  torso-squash: 1.0001
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -10.0385
+  leg-right-angle: 5.9263
+  knee-left-bend: 0.0931
+  knee-right-bend: 0.1016
+  head-tilt: -0.1877
+  head-nod: 2.6236
+  y-offset: 0.0050
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-026" {
+  line-of-action: -0.0149
+  torso-bend: -0.6727
+  torso-squash: 1.0003
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -11.1307
+  leg-right-angle: 4.5959
+  knee-left-bend: 0.0931
+  knee-right-bend: 0.1504
+  head-tilt: -0.1801
+  head-nod: 2.6093
+  y-offset: 0.0110
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-027" {
+  line-of-action: -0.0142
+  torso-bend: -0.6375
+  torso-squash: 1.0003
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -11.3660
+  leg-right-angle: 4.2200
+  knee-left-bend: 0.0950
+  knee-right-bend: 0.1650
+  head-tilt: -0.1656
+  head-nod: 2.6565
+  y-offset: 0.0124
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-028" {
+  line-of-action: -0.0121
+  torso-bend: -0.5432
+  torso-squash: 1.0002
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -11.1623
+  leg-right-angle: 4.5527
+  knee-left-bend: 0.1026
+  knee-right-bend: 0.1492
+  head-tilt: -0.1482
+  head-nod: 2.6424
+  y-offset: 0.0079
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-029" {
+  line-of-action: -0.0132
+  torso-bend: -0.5945
+  torso-squash: 1.0001
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -11.0620
+  leg-right-angle: 4.4828
+  knee-left-bend: 0.1024
+  knee-right-bend: 0.1225
+  head-tilt: -0.1711
+  head-nod: 2.5965
+  y-offset: 0.0037
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-030" {
+  line-of-action: -0.0136
+  torso-bend: -0.6117
+  torso-squash: 1.0002
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -10.8079
+  leg-right-angle: 3.6699
+  knee-left-bend: 0.0936
+  knee-right-bend: 0.0951
+  head-tilt: -0.3248
+  head-nod: 2.5435
+  y-offset: 0.0071
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-031" {
+  line-of-action: -0.0107
+  torso-bend: -0.4834
+  torso-squash: 1.0002
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -9.9460
+  leg-right-angle: 2.7811
+  knee-left-bend: 0.0893
+  knee-right-bend: 0.0796
+  head-tilt: -0.4135
+  head-nod: 2.5559
+  y-offset: 0.0073
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-032" {
+  line-of-action: -0.0112
+  torso-bend: -0.5018
+  torso-squash: 1.0002
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -8.8737
+  leg-right-angle: 2.1699
+  knee-left-bend: 0.0879
+  knee-right-bend: 0.0787
+  head-tilt: -0.5288
+  head-nod: 2.7704
+  y-offset: 0.0072
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-033" {
+  line-of-action: -0.0135
+  torso-bend: -0.6079
+  torso-squash: 1.0002
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -7.4802
+  leg-right-angle: 2.8971
+  knee-left-bend: 0.0919
+  knee-right-bend: 0.0789
+  head-tilt: -0.6032
+  head-nod: 2.8225
+  y-offset: 0.0080
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-034" {
+  line-of-action: -0.0111
+  torso-bend: -0.5012
+  torso-squash: 1.0003
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -6.1839
+  leg-right-angle: 4.7021
+  knee-left-bend: 0.0977
+  knee-right-bend: 0.0805
+  head-tilt: -0.6754
+  head-nod: 2.7504
+  y-offset: 0.0123
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+pose "mocap-signal-035" {
+  line-of-action: -0.0046
+  torso-bend: -0.2058
+  torso-squash: 1.0003
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -7.1800
+  leg-right-angle: 6.2821
+  knee-left-bend: 0.1151
+  knee-right-bend: 0.0855
+  head-tilt: -0.6297
+  head-nod: 2.6453
+  y-offset: 0.0103
+  body-angle: 75.0000
+  eyebrow-left: -0.4000
+  eyebrow-right: -0.3400
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.2500
+  mouth-smile: -0.2400
+  mouth-open: 0.0600
+}
+
+scene "01-the-tower" (duration: 12s, set: lighthouse-interior) {
+  place kai at (0.56, 0.72) facing up layer 1
+  place red-scarf at (0.56, 0.58) layer 2
+  camera wide
+  kai pose "gazing"
+  wait 1s
+
+  together {
+    camera zoom-to kai over 7s ease-in-out
+    do {
+      wait 1s
+      kai pose "watching"
+    }
+  }
+  wait 2s
+  transition fade-black 2s
+}
+
+scene "02-the-storm" (duration: 15s, set: lighthouse-window) {
+  place kai at (0.18, 0.72) facing right layer 1
+  place red-scarf at (0.18, 0.58) layer 2
+  camera wide
+  kai pose "surprised"
+  wait 1s
+
+  together {
+    kai moves-to (0.58, 0.72) over 2.8s ease-in
+    red-scarf moves-to (0.58, 0.58) over 2.8s ease-in
+    camera pan-to (0.58, 0.5) over 2.8s ease-out
+    camera shake 2.8s intensity 2
+    do {
+      kai pose "mocap-run-000"
+      wait 0.041667s
+      kai pose "mocap-run-001"
+      wait 0.041667s
+      kai pose "mocap-run-002"
+      wait 0.041667s
+      kai pose "mocap-run-003"
+      wait 0.041667s
+      kai pose "mocap-run-004"
+      wait 0.041667s
+      kai pose "mocap-run-005"
+      wait 0.041667s
+      kai pose "mocap-run-006"
+      wait 0.041667s
+      kai pose "mocap-run-007"
+      wait 0.041667s
+      kai pose "mocap-run-008"
+      wait 0.041667s
+      kai pose "mocap-run-009"
+      wait 0.041667s
+      kai pose "mocap-run-010"
+      wait 0.041667s
+      kai pose "mocap-run-011"
+      wait 0.041667s
+      kai pose "mocap-run-012"
+      wait 0.041667s
+      kai pose "mocap-run-013"
+      wait 0.041667s
+      kai pose "mocap-run-014"
+      wait 0.041667s
+      kai pose "mocap-run-015"
+      wait 0.041667s
+      kai pose "mocap-run-016"
+      wait 0.041667s
+      kai pose "mocap-run-017"
+      wait 0.041667s
+      kai pose "mocap-run-018"
+      wait 0.041667s
+      kai pose "mocap-run-019"
+      wait 0.041667s
+      kai pose "mocap-run-020"
+      wait 0.041667s
+      kai pose "mocap-run-021"
+      wait 0.041667s
+      kai pose "mocap-run-022"
+      wait 0.041667s
+      kai pose "mocap-run-023"
+      wait 0.041667s
+      kai pose "mocap-run-024"
+      wait 0.041667s
+      kai pose "mocap-run-025"
+      wait 0.041667s
+      kai pose "mocap-run-026"
+      wait 0.041667s
+      kai pose "mocap-run-027"
+      wait 0.041667s
+      kai pose "mocap-run-028"
+      wait 0.041667s
+      kai pose "mocap-run-029"
+      wait 0.041667s
+      kai pose "mocap-run-030"
+      wait 0.041667s
+      kai pose "mocap-run-031"
+      wait 0.041667s
+      kai pose "mocap-run-000"
+      wait 0.041667s
+      kai pose "mocap-run-001"
+      wait 0.041667s
+      kai pose "mocap-run-002"
+      wait 0.041667s
+      kai pose "mocap-run-003"
+      wait 0.041667s
+      kai pose "mocap-run-004"
+      wait 0.041667s
+      kai pose "mocap-run-005"
+      wait 0.041667s
+      kai pose "mocap-run-006"
+      wait 0.041667s
+      kai pose "mocap-run-007"
+      wait 0.041667s
+      kai pose "mocap-run-008"
+      wait 0.041667s
+      kai pose "mocap-run-009"
+      wait 0.041667s
+      kai pose "mocap-run-010"
+      wait 0.041667s
+      kai pose "mocap-run-011"
+      wait 0.041667s
+      kai pose "mocap-run-012"
+      wait 0.041667s
+      kai pose "mocap-run-013"
+      wait 0.041667s
+      kai pose "mocap-run-014"
+      wait 0.041667s
+      kai pose "mocap-run-015"
+      wait 0.041667s
+      kai pose "mocap-run-016"
+      wait 0.041667s
+      kai pose "mocap-run-017"
+      wait 0.041667s
+      kai pose "mocap-run-018"
+      wait 0.041667s
+      kai pose "mocap-run-019"
+      wait 0.041667s
+      kai pose "mocap-run-020"
+      wait 0.041667s
+      kai pose "mocap-run-021"
+      wait 0.041667s
+      kai pose "mocap-run-022"
+      wait 0.041667s
+      kai pose "mocap-run-023"
+      wait 0.041667s
+      kai pose "mocap-run-024"
+      wait 0.041667s
+      kai pose "mocap-run-025"
+      wait 0.041667s
+      kai pose "mocap-run-026"
+      wait 0.041667s
+      kai pose "mocap-run-027"
+      wait 0.041667s
+      kai pose "mocap-run-028"
+      wait 0.041667s
+      kai pose "mocap-run-029"
+      wait 0.041667s
+      kai pose "mocap-run-030"
+      wait 0.041667s
+      kai pose "mocap-run-031"
+      wait 0.041667s
+    }
+  }
+  camera medium kai
+  kai pose "shielding"
+  wait 2s
+  kai pose "angry"
+  wait 4s
+  camera shake 0.5s intensity 1.5
+  wait 3.7s
+  transition dissolve 1s
+}
+
+scene "03-the-signal" (duration: 18s, set: lighthouse-beam) {
+  place kai at (0.50, 0.72) facing right layer 1
+  place red-scarf at (0.50, 0.58) layer 2
+  place beacon at (0.46, 0.58) layer 3
+  camera close-up kai
+  kai pose "angry"
+  wait 0.5s
+  together {
+    beacon moves-to (0.47, 0.63) over 3.5s ease-out
+    camera shake 0.5s intensity 8
+    do {
+      kai pose "lifting"
+      wait 0.083333s
+        kai pose "mocap-lift-000"
+        wait 0.083333s
+        kai pose "mocap-lift-001"
+        wait 0.083333s
+        kai pose "mocap-lift-002"
+        wait 0.083333s
+        kai pose "mocap-lift-003"
+        wait 0.083333s
+        kai pose "mocap-lift-004"
+        wait 0.083333s
+        kai pose "mocap-lift-005"
+        wait 0.083333s
+        kai pose "mocap-lift-006"
+        wait 0.083333s
+        kai pose "mocap-lift-007"
+        wait 0.083333s
+        kai pose "mocap-lift-008"
+        wait 0.083333s
+        kai pose "mocap-lift-009"
+        wait 0.083333s
+        kai pose "mocap-lift-010"
+        wait 0.083333s
+        kai pose "mocap-lift-011"
+        wait 0.083333s
+        kai pose "mocap-lift-012"
+        wait 0.083333s
+        kai pose "mocap-lift-013"
+        wait 0.083333s
+        kai pose "mocap-lift-014"
+        wait 0.083333s
+        kai pose "mocap-lift-015"
+        wait 0.083333s
+        kai pose "mocap-lift-016"
+        wait 0.083333s
+        kai pose "mocap-lift-017"
+        wait 0.083333s
+        kai pose "mocap-lift-018"
+        wait 0.083333s
+        kai pose "mocap-lift-019"
+        wait 0.083333s
+        kai pose "mocap-lift-020"
+        wait 0.083333s
+        kai pose "mocap-lift-021"
+        wait 0.083333s
+        kai pose "mocap-lift-022"
+        wait 0.083333s
+        kai pose "mocap-lift-023"
+        wait 0.083333s
+        kai pose "mocap-lift-024"
+        wait 0.083333s
+        kai pose "mocap-lift-025"
+        wait 0.083333s
+        kai pose "mocap-lift-026"
+        wait 0.083333s
+        kai pose "mocap-lift-027"
+        wait 0.083333s
+        kai pose "mocap-lift-028"
+        wait 0.083333s
+        kai pose "mocap-lift-029"
+        wait 0.083333s
+        kai pose "mocap-lift-030"
+        wait 0.083333s
+        kai pose "mocap-lift-031"
+        wait 0.083333s
+        kai pose "mocap-lift-032"
+        wait 0.083333s
+        kai pose "mocap-lift-033"
+        wait 0.083333s
+        kai pose "mocap-lift-034"
+        wait 0.083333s
+        kai pose "mocap-lift-035"
+        wait 0.083333s
+        kai pose "mocap-lift-036"
+        wait 0.083333s
+        kai pose "mocap-lift-037"
+        wait 0.083333s
+        kai pose "mocap-lift-038"
+        wait 0.083333s
+        kai pose "mocap-lift-039"
+        wait 0.083333s
+        kai pose "mocap-lift-040"
+        wait 0.083333s
+    }
+  }
+  camera reset over 1.5s
+  camera wide
+  kai pose "signaling"
+  do {
+    kai pose "mocap-signal-000"
+    wait 0.083333s
+    kai pose "mocap-signal-001"
+    wait 0.083333s
+    kai pose "mocap-signal-002"
+    wait 0.083333s
+    kai pose "mocap-signal-003"
+    wait 0.083333s
+    kai pose "mocap-signal-004"
+    wait 0.083333s
+    kai pose "mocap-signal-005"
+    wait 0.083333s
+    kai pose "mocap-signal-006"
+    wait 0.083333s
+    kai pose "mocap-signal-007"
+    wait 0.083333s
+    kai pose "mocap-signal-008"
+    wait 0.083333s
+    kai pose "mocap-signal-009"
+    wait 0.083333s
+    kai pose "mocap-signal-010"
+    wait 0.083333s
+    kai pose "mocap-signal-011"
+    wait 0.083333s
+    kai pose "mocap-signal-012"
+    wait 0.083333s
+    kai pose "mocap-signal-013"
+    wait 0.083333s
+    kai pose "mocap-signal-014"
+    wait 0.083333s
+    kai pose "mocap-signal-015"
+    wait 0.083333s
+    kai pose "mocap-signal-016"
+    wait 0.083333s
+    kai pose "mocap-signal-017"
+    wait 0.083333s
+    kai pose "mocap-signal-018"
+    wait 0.083333s
+    kai pose "mocap-signal-019"
+    wait 0.083333s
+    kai pose "mocap-signal-020"
+    wait 0.083333s
+    kai pose "mocap-signal-021"
+    wait 0.083333s
+    kai pose "mocap-signal-022"
+    wait 0.083333s
+    kai pose "mocap-signal-023"
+    wait 0.083333s
+    kai pose "mocap-signal-024"
+    wait 0.083333s
+    kai pose "mocap-signal-025"
+    wait 0.083333s
+    kai pose "mocap-signal-026"
+    wait 0.083333s
+    kai pose "mocap-signal-027"
+    wait 0.083333s
+    kai pose "mocap-signal-028"
+    wait 0.083333s
+    kai pose "mocap-signal-029"
+    wait 0.083333s
+    kai pose "mocap-signal-030"
+    wait 0.083333s
+    kai pose "mocap-signal-031"
+    wait 0.083333s
+    kai pose "mocap-signal-032"
+    wait 0.083333s
+    kai pose "mocap-signal-033"
+    wait 0.083333s
+    kai pose "mocap-signal-034"
+    wait 0.083333s
+    kai pose "mocap-signal-035"
+    wait 0.083333s
+  }
+  kai pose "excited"
+  wait 8s
+  transition wipe left 1.5s
+}
+
+scene "04-the-rescue" (duration: 10s, set: sea-view) {
+  place kai at (0.50, 0.72) facing right layer 1
+  place maya at (0.74, 0.58) facing left layer 2
+  place red-scarf at (0.50, 0.58) layer 3
+  camera wide
+  kai pose "watching"
+  maya pose "watching"
+  wait 1s
+  together {
+    camera pan-to (0.62, 0.50) over 5s ease-in-out
+    maya moves-to (0.66, 0.72) over 5s ease-out
+  }
+  kai pose "grateful"
+  maya pose "grateful"
+  wait 2s
+  transition fade-white 2s
+}
+
+scene "05-dawn" (duration: 5s, set: dawn-sky) {
+  place kai at (0.36, 0.72) facing up layer 1
+  place maya at (0.66, 0.72) facing up layer 1
+  place red-scarf at (0.36, 0.58) layer 2
+  camera wide
+  kai pose "exhausted-peace"
+  maya pose "gazing"
+  wait 1.2s
+  kai pose "grateful"
+  maya pose "grateful"
+  wait 2.8s
+  transition fade-black 1s
+}

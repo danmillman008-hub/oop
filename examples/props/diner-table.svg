@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240">
+<defs>
+  <linearGradient id="wood" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#765136"/><stop offset=".45" stop-color="#563923"/><stop offset="1" stop-color="#35261f"/></linearGradient>
+  <linearGradient id="edge" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#c09361"/><stop offset="1" stop-color="#775039"/></linearGradient>
+</defs>
+<!-- Foreground counter hides seated characters below the waist. -->
+<path d="M26 66Q26 53 42 53H918Q934 53 934 66V108H26Z" fill="url(#edge)" stroke="#251a17" stroke-width="9"/>
+<path d="M39 69H921V101H39Z" fill="url(#wood)"/>
+<path d="M39 111H921V218H39Z" fill="#473124" stroke="#251a17" stroke-width="8"/>
+<path d="M62 128H898M62 201H898" stroke="#a47a50" stroke-width="5" opacity=".48"/>
+<path d="M120 218V239M840 218V239" stroke="#171315" stroke-width="18"/>
+<path d="M156 82h82M742 82h62" stroke="#dfba80" stroke-width="5" opacity=".45"/>
+</svg>

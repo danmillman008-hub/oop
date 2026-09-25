@@ -1,0 +1,38 @@
+{
+  "name": "Maya, Captain's Daughter",
+  "body": {
+    "height": 0.55,
+    "build": 0.5,
+    "skin_color": [237, 198, 164]
+  },
+  "face": {
+    "shape": 0.62,
+    "eye_size": 1.08,
+    "eye_color": [78, 112, 91],
+    "eyebrow_thickness": 0.5,
+    "nose_size": 0.28,
+    "lip_fullness": 0.62
+  },
+  "hair": {
+    "color": [171, 76, 49],
+    "style": "Wavy",
+    "length": 0.82
+  },
+  "outfit": {
+    "top": {
+      "kind": "Dress",
+      "color": [46, 116, 84],
+      "secondary_color": [173, 196, 133]
+    },
+    "bottom": {
+      "kind": "Skirt",
+      "color": [38, 100, 75],
+      "secondary_color": [63, 137, 98]
+    },
+    "shoes": {
+      "kind": "Sneakers",
+      "color": [232, 225, 204]
+    },
+    "accessories": []
+  }
+}
