@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="100" viewBox="0 0 300 100">
+<defs><linearGradient id="cloth" x1="0" y1="0" x2="0.8" y2="1"><stop stop-color="#ed6558"/><stop offset="1" stop-color="#a62f3d"/></linearGradient></defs>
+<!-- Compact central cloth shape: prop SVGs are otherwise drawn at 30% of canvas height. -->
+<path d="M146 47Q150 46 154 47L153 50Q150 49 147 51Z" fill="url(#cloth)" stroke="#722b36" stroke-width="1.2"/>
+<path d="M152 50l3 1-1 5-3-2Z" fill="url(#cloth)" stroke="#722b36" stroke-width="1"/>
+<path d="M147 48q3 1 6 0" fill="none" stroke="#ffb099" stroke-width=".8" opacity=".65"/>
+</svg>

@@ -1,0 +1,43 @@
+{
+  "name": "Kai, Lighthouse Keeper",
+  "body": {
+    "height": 0.85,
+    "build": 0.35,
+    "skin_color": [194, 137, 100]
+  },
+  "face": {
+    "shape": 0.38,
+    "eye_size": 0.92,
+    "eye_color": [49, 65, 73],
+    "eyebrow_thickness": 0.68,
+    "nose_size": 0.32,
+    "lip_fullness": 0.38
+  },
+  "hair": {
+    "color": [31, 37, 48],
+    "style": "SlickedBack",
+    "length": 0.42
+  },
+  "outfit": {
+    "top": {
+      "kind": "TrenchCoat",
+      "color": [28, 49, 71],
+      "secondary_color": [66, 83, 98]
+    },
+    "bottom": {
+      "kind": "Pants",
+      "color": [34, 43, 55],
+      "secondary_color": [55, 64, 76]
+    },
+    "shoes": {
+      "kind": "Boots",
+      "color": [43, 36, 34]
+    },
+    "accessories": [
+      {
+        "kind": "Scarf",
+        "color": [190, 55, 62]
+      }
+    ]
+  }
+}

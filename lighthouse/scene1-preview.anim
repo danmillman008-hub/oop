@@ -1,0 +1,242 @@
+import character kai from "assets/characters/kai.json"
+import set lighthouse-interior from "assets/sets/lighthouse-interior.svg"
+import prop red-scarf from "assets/props/red-scarf.svg"
+
+config {
+  width: 1280
+  height: 720
+  fps: 24
+  background: #111d2e
+}
+
+pose "gazing" {
+  line-of-action: 0.0400
+  torso-bend: -2.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.1800
+  shoulder-right: 0.1800
+  arm-left-angle: -24.0000
+  arm-right-angle: 24.0000
+  elbow-left-bend: 0.4200
+  elbow-right-bend: 0.4200
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: 0.0000
+  head-nod: -7.0000
+  y-offset: 0.0000
+  body-angle: 180.0000
+  eyebrow-left: 0.0000
+  eyebrow-right: 0.0000
+  eye-open-left: 0.9200
+  eye-open-right: 0.9200
+  eye-direction: 0.0000
+  mouth-smile: 0.0000
+  mouth-open: 0.0000
+}
+
+pose "shielding" {
+  line-of-action: 0.2800
+  torso-bend: -9.0000
+  torso-squash: 0.9600
+  shoulder-left: 0.4800
+  shoulder-right: 0.3500
+  arm-left-angle: -55.0000
+  arm-right-angle: -72.0000
+  elbow-left-bend: 0.7400
+  elbow-right-bend: 0.8600
+  leg-left-angle: -7.0000
+  leg-right-angle: 8.0000
+  knee-left-bend: 0.2400
+  knee-right-bend: 0.2000
+  head-tilt: 0.0000
+  head-nod: 12.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: 0.5800
+  eyebrow-right: 0.4800
+  eye-open-left: 1.1600
+  eye-open-right: 1.1600
+  eye-direction: 0.0000
+  mouth-smile: -0.0800
+  mouth-open: 0.2600
+}
+
+pose "lifting" {
+  line-of-action: 0.3800
+  torso-bend: -13.0000
+  torso-squash: 0.9400
+  shoulder-left: -0.1000
+  shoulder-right: 0.5600
+  arm-left-angle: -34.0000
+  arm-right-angle: -142.0000
+  elbow-left-bend: 0.8800
+  elbow-right-bend: 0.2400
+  leg-left-angle: -13.0000
+  leg-right-angle: 12.0000
+  knee-left-bend: 0.4800
+  knee-right-bend: 0.4300
+  head-tilt: 3.0000
+  head-nod: -12.0000
+  y-offset: -4.0000
+  body-angle: 75.0000
+  eyebrow-left: -0.1200
+  eyebrow-right: -0.1200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.0000
+  mouth-smile: -0.1800
+  mouth-open: 0.1000
+}
+
+pose "signaling" {
+  line-of-action: 0.1600
+  torso-bend: -3.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.4200
+  shoulder-right: 0.5500
+  arm-left-angle: -58.0000
+  arm-right-angle: -154.0000
+  elbow-left-bend: 0.7800
+  elbow-right-bend: 0.0800
+  leg-left-angle: -12.0000
+  leg-right-angle: 12.0000
+  knee-left-bend: 0.0800
+  knee-right-bend: 0.0800
+  head-tilt: -2.0000
+  head-nod: -3.0000
+  y-offset: 0.0000
+  body-angle: 75.0000
+  eyebrow-left: -0.3600
+  eyebrow-right: -0.3200
+  eye-open-left: 0.9000
+  eye-open-right: 0.9000
+  eye-direction: 0.3500
+  mouth-smile: -0.2200
+  mouth-open: 0.0600
+}
+
+pose "watching" {
+  line-of-action: 0.1000
+  torso-bend: 5.0000
+  torso-squash: 1.0000
+  shoulder-left: -0.0400
+  shoulder-right: -0.0400
+  arm-left-angle: 9.0000
+  arm-right-angle: -9.0000
+  elbow-left-bend: 0.1000
+  elbow-right-bend: 0.1000
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: -2.0000
+  head-nod: -1.0000
+  y-offset: 0.0000
+  body-angle: 70.0000
+  eyebrow-left: 0.1800
+  eyebrow-right: 0.3000
+  eye-open-left: 1.0000
+  eye-open-right: 1.0000
+  eye-direction: 0.3800
+  mouth-smile: 0.1200
+  mouth-open: 0.0000
+}
+
+pose "exhausted-peace" {
+  line-of-action: -0.1800
+  torso-bend: 8.0000
+  torso-squash: 0.9700
+  shoulder-left: -0.4200
+  shoulder-right: -0.4200
+  arm-left-angle: 18.0000
+  arm-right-angle: -18.0000
+  elbow-left-bend: 0.1800
+  elbow-right-bend: 0.1800
+  leg-left-angle: 4.0000
+  leg-right-angle: -4.0000
+  knee-left-bend: 0.1000
+  knee-right-bend: 0.1000
+  head-tilt: 2.0000
+  head-nod: 15.0000
+  y-offset: 0.0000
+  body-angle: 180.0000
+  eyebrow-left: -0.1500
+  eyebrow-right: -0.1500
+  eye-open-left: 0.7200
+  eye-open-right: 0.7200
+  eye-direction: 0.0000
+  mouth-smile: -0.1800
+  mouth-open: 0.0000
+}
+
+pose "grateful" {
+  line-of-action: 0.0800
+  torso-bend: -4.0000
+  torso-squash: 1.0000
+  shoulder-left: 0.2400
+  shoulder-right: 0.0000
+  arm-left-angle: -34.0000
+  arm-right-angle: 8.0000
+  elbow-left-bend: 0.8600
+  elbow-right-bend: 0.1200
+  leg-left-angle: 3.0000
+  leg-right-angle: -3.0000
+  knee-left-bend: 0.0000
+  knee-right-bend: 0.0000
+  head-tilt: -3.0000
+  head-nod: -8.0000
+  y-offset: 0.0000
+  body-angle: 68.0000
+  eyebrow-left: 0.3000
+  eyebrow-right: 0.3600
+  eye-open-left: 0.9600
+  eye-open-right: 0.9600
+  eye-direction: 0.0000
+  mouth-smile: 0.7200
+  mouth-open: 0.0200
+}
+
+pose "dashing" {
+  line-of-action: 0.4800
+  torso-bend: -17.0000
+  torso-squash: 1.0400
+  shoulder-left: 0.1200
+  shoulder-right: 0.1800
+  arm-left-angle: 46.0000
+  arm-right-angle: -46.0000
+  elbow-left-bend: 0.4600
+  elbow-right-bend: 0.4200
+  leg-left-angle: -23.0000
+  leg-right-angle: 23.0000
+  knee-left-bend: 0.4600
+  knee-right-bend: 0.4300
+  head-tilt: 1.0000
+  head-nod: -5.0000
+  y-offset: -2.0000
+  body-angle: 75.0000
+  eyebrow-left: -0.1800
+  eyebrow-right: -0.1800
+  eye-open-left: 0.8800
+  eye-open-right: 0.8800
+  eye-direction: 0.0000
+  mouth-smile: -0.0800
+  mouth-open: 0.2300
+}
+
+scene "scene-1-10s-preview" (duration: 10s, set: lighthouse-interior) {
+  place kai at (0.56, 0.72) facing up layer 1
+  place red-scarf at (0.56, 0.58) layer 2
+  camera wide
+  kai pose "gazing"
+  wait 1s
+  together {
+    camera zoom-to kai over 7s ease-in-out
+    do {
+      wait 1s
+      kai pose "watching"
+    }
+  }
+  wait 2s
+}
